@@ -3,7 +3,7 @@
   <title>Navigation</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -51,8 +51,8 @@
     }
 
     #navbar a:hover {
-        background-color: #ddd;
-        color: black;
+        background: #713361;
+        color: #fff;
     }
 
     #navbar a.active {
@@ -76,9 +76,24 @@
         nav.navbar {
             background: lightgray;
         }
+    }#navbar li:hover{
+         background:#713361;
+     }#navbar #dropper{
+        color:#b54b70;
+     }#navbar #dropper:hover{
+        color: #ffffff;
+                          }
   </style>
 </head>
 <body>
+
+<div class="social">
+    <a href="https://www.facebook.com/cybercraft.technologies/"><i class="fab fa-facebook fa-2x"></i></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.instagram.com/craftsmen.cybercraft/"><i class="fab fa-instagram  fa-2x"></i></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://github.com/cybercrafttechnologies"><i class="fab fa-github fa-2x"></i></a>
+</div>
   <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -91,14 +106,16 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="www.cybercraft-technologies.in" class="active">Home</a></li>
+          <li><a href="index.php" class="active">Home</a></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="index.php#craftingcreativity">Crafting Creativity</a></li>
+                <li><a href="#" id="dropper">Vision</a></li>
+                <li><a href="#" id="dropper">Mission</a></li>
+                <li><a href="#" id="dropper">Team</a></li>
             </ul>
           </li>
-          <li><a href="index.php#whycybercraft">Why CyberCraft?</a></li>
+          <li><a href="#">Portfolio</a></li>
           <li><a href="#">Get in touch</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -118,6 +135,7 @@
               document.getElementById("logo").style.fontSize = "25px";
               document.getElementById('logo').innerHTML="CyberCraft Technologies";
               document.getElementById("navbar").style.backgroundColor="rgba(113, 51, 97,0.5)";
+              document.getElementById("navbar").style.color=""
           } else {
               document.getElementById("navbar").style.overflow="visible";
               document.getElementById("navbar").style.padding = "20px 15px";

@@ -1,11 +1,18 @@
+
 body{
   font-family:sans-serif;
   margin:0;
   color: #fff;
-}.rel{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}main{
+   flex: 1 0 auto;
+ }.rel{
   position:relative;
   background:rgba(0,0,0,0.7);
   text-align: center;
+   display:none;
 }a,input,button{
   color:#0084ff;
   text-decoration: none;
@@ -13,25 +20,24 @@ body{
   -webkit-transition:all 1s ease;
 }a:hover{
   color:#888;
-}
+}#main{
+   display: none;
+   text-align: center;
+ }
 
 /*PRELOADER - Properties and Animation (start)*/
 #loader {
   position: absolute;
   left: 45%;
   top: 45%;
-  z-index: 1;
-  width: 100px;
-  height: 100px;
   margin: -75px 0 0 -75px;
   color: #f3f3f3;
   border-radius: 50%;
   z-index: 1;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 100px;
   -webkit-animation: spin 4s alternate infinite;
   animation: spin 4s alternate infinite;
-  vertical-align: text-bottom;
 }
 
 @-webkit-keyframes spin {
@@ -73,52 +79,73 @@ body{
 }
 /*BACKGROUND ANIMATION (Ends)#
 **********************************
-ANIMATION TO PAGE CONTENT (Starts) */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
-}
-@keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
-}
-#main{
-  display: none;
-  text-align: center;
-}
-/*ANIMATION OF PAGE CONTENT (ENDS)
-**********************************
 HEADER - Properties (Starts)*/
-.header{
-  width:100%;
-  height:100%;
-  color:#fff;
-  top:100px;
-  float: right;
 
-}.buttonheader{
-  background: none;
-  border: 1px solid #fff;
-  border-radius: none;
-  width: 150;
-  height: 50;
+header {
+  position: relative;
   text-align: center;
-  font-family: sans-serif;
-  -moz-transition:all 1s ease;
-  -webkit-transition:all 1s ease;
-  text-decoration:none;
-  color:#fff;
-}.buttonheader:hover{
-  background: #eee;
-  color:#222;
+  height: 100vh;
+  color: #fff;
 }
+
+header h1 {
+  padding-top: 130px;
+  padding-top: -webkit-calc(60vh - 113px);
+  padding-top: expression(60vh - 113px);
+  padding-top: -moz-calc(60vh - 113px);
+  padding-top: -o-calc(60vh - 113px);
+  padding-top: calc(60vh - 113px);
+  font-size: 4em;
+  font-weight: 100;
+  font-family: quicksand;
+}
+
+header h2 {
+  font-size: 2em;
+}
+
+header span.animated {
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 50px;
+  height: 4px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+header span::before,
+header span::after {
+  position: absolute;
+  top: -23px;
+  height: 30px;
+  width: 4px;
+  border-radius: 2px;
+  background: #fff;
+}
+
+header span::before {
+  left: -10px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform:    rotate(-45deg);
+  -ms-transform:     rotate(-45deg);
+  -o-transform:      rotate(-45deg);
+  transform:         rotate(-45deg);
+}
+
+header span::after {
+  right: -10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  transform:         rotate(45deg);
+}
+
 /*HEADER - Properties (Ends)#
 ******************************
 CONTENT - IndexPage(Starts)*/
@@ -127,7 +154,7 @@ CONTENT - IndexPage(Starts)*/
 }
 .contentmain{
   background: #fff;
-  width:85%;
+  width:80%;
   top: 600;
   color:#111;
   font-family:courier;
@@ -136,9 +163,10 @@ CONTENT - IndexPage(Starts)*/
   vertical-align: top;
   border-radius: 10px;
   opacity: 0.89;
-  padding: 1%;
+  padding: 1.5%;
   align-self: center;
   display: inline-block;
+  overflow-wrap: break-spaces;
 }.contentmain img{
   border-radius: 10px;
 }
@@ -147,19 +175,19 @@ CONTENT - IndexPage(Starts)*/
 EXTRA FONTS (Starts)*/
 @font-face {
   font-family: sofia;
-  src: url('font/Sofia-Regular.otf');
+  src: url('../font/Sofia-Regular.otf');
 }@font-face {
   font-family: courier;
-  src: url('font/Courier.otf');
+  src: url('../font/Courier.ttf');
 }@font-face {
   font-family: quicksand;
-  src: url('font/Quicksand-Light.otf');
+  src: url('../font/Quicksand-Light.otf');
 }@font-face {
   font-family: atomicage;
-  src: url('font/atomicage-regular.ttf');
+  src: url('../font/atomicage-regular.ttf');
 }@font-face {
   font-family: radiospace;
-  src: url('font/radiospacebold.ttf');
+  src: url('../font/radiospacebold.ttf');
 }
 /*EXTRA FONTS (Ends)#
 **************************
@@ -187,45 +215,50 @@ FORM PROPERTIES (Starts)*/
 }
 /*FORM CONTROLS(Ends)#
 **********************
-POPUP FORM(Starts)*/
+Scroll bar properties*/
+::-webkit-scrollbar{
+  width:5px;
+}::-webkit-scrollbar-track {
+   background: none;
+ }::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(#713361, #b54b70);
+    height:20px
+  }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.5); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  .annote{
+    height: 50px;
+    background-image: linear-gradient(#713361, #b54b70);
+    color: #fff;
+    opacity: 0.7;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px;
+    padding: 5px;
+    font-size: 25px;
+    vertical-align: center;
+    font-family: courier, serif;
+    display: block;
+    left: 43%;
+    position: absolute;
+  }
+
+
+#page-content {
+  flex: 1 0 auto;
 }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  border-radius: 10px;
-  border-bottom: 2px solid #b54b70 ;
-}
 
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.social{
+  background: rgba(113, 51, 97,0.5);
+  color: #ffffff;
+  height: 50px;
+  position: fixed;
+  left: -60px;
+  top:60%;
+  transform: rotate(-90deg);
+  border-radius: 9px;
+  width: 200px;
+  padding: 1em;
 }

@@ -1,0 +1,96 @@
+.card{
+    height: 500px;
+    background-color: rgba(23, 20, 29, 0.7);
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    align-content: center;
+    border-bottom:2px solid #713361;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+    font-family: 'courier', sans-serif;
+    overflow-y: scroll;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+
+.title {
+    color: rgb(163, 63, 149);
+    font-weight: 300;
+}
+
+.bar {
+    height: 10px;
+    width: 100%;
+    padding: 2px;
+}
+
+
+.emptybar {
+    background-color: #2e3033;
+    width: 100%;
+    height: 100%;
+}
+
+.filledbar {
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: linear-gradient(90deg, #713361 0%, #b54b70 100%);
+    transition: 0.6s ease-out;
+}
+.card:hover .filledbar {
+    width: 78%;
+    transition: 0.4s ease-out;
+}
+.relate{
+    position: relative;
+}
+
+.servicebut{
+    border: none;
+    border-radius: 8px;
+    color: #b54b70 ;
+    font-size: 1.2em;
+    width: 100%;
+    height: 50px;
+    background: none;
+    transition: all 1s ease;
+    position: relative;
+    bottom:5px;
+}
+
+.servicebut:hover{
+    background-image: linear-gradient( #b54b70 ,#713361);
+}
+
+.card:hover .servicebut{
+    background-image: linear-gradient(#713361, #b54b70);
+    color: #ffffff;
+}
+
+
+::-webkit-scrollbar{
+    width:5px;
+}::-webkit-scrollbar-track {
+     background: none;
+ }::-webkit-scrollbar-thumb{
+      background-image: linear-gradient(#713361, #b54b70);
+      height:20px
+  }

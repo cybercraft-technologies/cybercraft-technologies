@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cfdb94c-4b52-4da6-b561-b59e91d65c16" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="6cfdb94c-4b52-4da6-b561-b59e91d65c16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-large.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-small.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/merits.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/scroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merits.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/animations.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/merits.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/services.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/test.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/effects.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/effects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cybercraft.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderconfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderconfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,16 +40,29 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1TTMaDT5mRipnrT8KL7OJ9ZwgGe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -35,15 +72,23 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cybercraft\" />
+      <recent name="C:\xampp\htdocs\cybercraft\includes" />
+      <recent name="C:\xampp\htdocs\cybercraft\styles" />
+      <recent name="C:\xampp\htdocs\cybercraft\javascript" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -65,10 +110,40 @@
       <workItem from="1578211800592" duration="32000" />
       <workItem from="1578369819388" duration="791000" />
       <workItem from="1578588779761" duration="538000" />
+      <workItem from="1579555011738" duration="13350000" />
+      <workItem from="1579615424384" duration="29193000" />
+      <workItem from="1579656080194" duration="33000" />
+      <workItem from="1579657395058" duration="1031000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="448" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1579655928505">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="448" y="140" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1579655928505" />
+    <state x="498" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579649809547">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1579649809547" />
+    <state x="603" y="333" key="NewPhpFileDialog" timestamp="1579638202011">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="603" y="333" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1579638202011" />
+    <state x="463" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1579657730494">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="463" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579657730494" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1579640499794">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1579640499794" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1579631562636">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1579631562636" />
   </component>
 </project>

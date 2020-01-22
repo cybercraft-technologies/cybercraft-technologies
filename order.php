@@ -6,7 +6,7 @@
     <title>
       CYBERCRAFT TECHNOLOGIES|Crafting Creativities...
     </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
       <link rel="shortcut icon" type="image/x-icon" href="img/loader.png">
     <script type="text/javascript">
@@ -72,7 +72,7 @@
         <div class=ordercontentwrapper>
           <div class="ordercontent">
             <center>
-                <div class="container">
+                <div class="card-container">
                   <div class="row" style="padding:5px;">
                     <div class="col-sm-12">
                       <font face=sofia size=7 color=#fff>Make an order, As a guest!</font><br><br><br>
