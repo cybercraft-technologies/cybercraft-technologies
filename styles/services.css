@@ -1,5 +1,5 @@
 .card{
-    height: 500px;
+    height: 600px;
     background-color: rgba(23, 20, 29, 0.7);
     border-radius: 10px;
     box-shadow: -1rem 0 3rem #000;
@@ -11,7 +11,7 @@
     color: #ffffff;
     text-align: center;
     padding: 1em;
-    font-family: 'courier', sans-serif;
+    font-family: nimbus, sans-serif;
     overflow-y: scroll;
 }
 
@@ -68,6 +68,7 @@
     border-radius: 8px;
     color: #b54b70 ;
     font-size: 1.2em;
+    font-weight: bold;
     width: 100%;
     height: 50px;
     background: none;
@@ -93,4 +94,8 @@
  }::-webkit-scrollbar-thumb{
       background-image: linear-gradient(#713361, #b54b70);
       height:20px
+  }
+
+  .card p{
+      font-size: 1.1em;
   }

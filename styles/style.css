@@ -154,10 +154,10 @@ CONTENT - IndexPage(Starts)*/
 }
 .contentmain{
   background: #fff;
-  width:80%;
+  width:90%;
   top: 600;
   color:#111;
-  font-family:courier;
+  font-family:nimbus;
   font-size: 18px;
   text-align: center;
   vertical-align: top;
@@ -188,6 +188,10 @@ EXTRA FONTS (Starts)*/
 }@font-face {
   font-family: radiospace;
   src: url('../font/radiospacebold.ttf');
+}
+@font-face {
+  font-family: nimbus;
+  src: url('../font/nimbusmono-regular.otf');
 }
 /*EXTRA FONTS (Ends)#
 **************************
